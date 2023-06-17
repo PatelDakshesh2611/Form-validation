@@ -4,7 +4,8 @@ import { useState } from 'react'
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
-const Form = () => {
+const Form = (props) => {
+    props.data(0)
     const nav=useNavigate()
     const[email,upde]=useState('')
   const[pass,upp]=useState('')
